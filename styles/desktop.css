@@ -1,0 +1,148 @@
+@media screen and (min-width: 400px) {
+  body {
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
+  }
+
+  .nav-bar {
+    flex-direction: row;
+  }
+  .nav-bar .nav-links {
+    display: block;
+    width: 100%;
+  }
+  .nav-bar .nav-links ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+  }
+  .nav-bar .nav-links ul li {
+    margin-right: 4%;
+    transition: 0.5s ease-in-out;
+  }
+  .nav-bar .nav-links ul li a {
+    color: #fff5bb;
+    text-decoration: none;
+  }
+  .nav-bar .nav-links ul li a:hover {
+    color: red;
+  }
+  .nav-bar .nav-links ul li:hover {
+    transform: scale(1.3);
+  }
+  .nav-bar .hamburger {
+    display: none;
+  }
+
+  .intro {
+    height: 30vh;
+    padding: 4% 10%;
+  }
+  .intro h1 {
+    font-size: 3em;
+  }
+
+  .desktop-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .desktop-flex h2 {
+    font-size: 2em;
+    margin: 0;
+  }
+  .desktop-flex .about-me {
+    color: #fff5bb;
+    background-color: transparent;
+  }
+  .desktop-flex .about-me h2 {
+    border-bottom: 1px solid #fff5bb;
+  }
+  .desktop-flex .about-me p {
+    font-size: 1.3em;
+    width: 60%;
+  }
+  .desktop-flex .tech-stack {
+    margin: 0;
+  }
+  .desktop-flex .tech-stack .tech-box {
+    margin-top: 15%;
+  }
+  .desktop-flex .tech-stack .tech-box .tech-imgs img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  .desktop-flex .work {
+    margin-bottom: 1%;
+    height: 70vh;
+    width: 90vw;
+  }
+  .desktop-flex .work h2 {
+    width: auto;
+    padding: 2.5%;
+  }
+  .desktop-flex .work .carousel {
+    height: 100%;
+    font-size: 1.2em;
+    margin-top: 3%;
+  }
+  .desktop-flex .work .carousel .carousel-image {
+    height: 100%;
+  }
+  .desktop-flex .work .carousel p {
+    font-size: 1.2em;
+  }
+  .desktop-flex .work .carousel .work-tech {
+    width: 100%;
+  }
+  .desktop-flex .work .carousel .work-tech li {
+    margin: 1%;
+  }
+  .desktop-flex .work .carousel .project-links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .desktop-flex .work .carousel .project-links a {
+    margin: 2%;
+    text-decoration: none;
+    color: red;
+    transition: 0.5s ease-in-out;
+  }
+  .desktop-flex .work .carousel .project-links a:hover {
+    transform: scale(1.3);
+  }
+
+  .contact-me .container {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav-bar .nav-links {
+    display: none;
+  }
+
+  .desktop-flex {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 70vh;
+  }
+  .desktop-flex .about-me {
+    width: 30%;
+    order: 1;
+    justify-content: start;
+  }
+  .desktop-flex .tech-stack {
+    width: 30%;
+    order: 3;
+    justify-content: start;
+  }
+  .desktop-flex .work {
+    width: 30%;
+    order: 2;
+    flex-grow: 3;
+    justify-content: start;
+  }
+}/*# sourceMappingURL=desktop.css.map */

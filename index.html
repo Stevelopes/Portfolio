@@ -4,9 +4,219 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600&family=Fraunces:ital,wght@0,300;0,400;0,900;1,200;1,500;1,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/desktop.css">
     <title>Portfolio</title>
 </head>
+<a name="top"></a>
 <body>
-    
+   <div class="wrapper">
+    <header class="nav-bar">
+            <div class="hamburger" id="hamburger">
+                <svg width="24" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z" fill="#FFF" fill-rule="evenodd"/></svg>
+            </div>
+        <nav class="nav-links">
+            <ul >
+                <li><a href="#top">Home</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#tech-stack">Tech Stack</a></li>
+                <li><a href="#Work">Work</a></li>
+                <li><a href="#contact-me">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-box">
+            <nav class="nav-links">
+                <ul >
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="">Tech Stack</a></li>
+                    <li><a href="">Work</a></li>
+                    <li><a href="#contact-me">Contact</a></li>
+                </ul>
+            </nav>
+    </div>
+    </header>
+    <main>
+        <section class="intro">
+            <h1>
+                Hi, I'm Steven <span class="vertical">Lopes!</span> 
+            </h1>
+            <p>
+                Front-end Developer
+            </p>
+        </section>
+        <a name="about-me"></a>
+        <div class="desktop-flex">
+            <section class="flex-box about-me">
+                <h2>
+                    About Me
+                </h2>
+                <p>
+                    I am a self-taught web developer who loves to learn how things work. I'm a keen learner and pretty quick at picking up new skills.
+                </p>
+                <p>
+                    If I'm not learning new technologies, I'm spending time with my family, playing video games or out playing golf.
+                </p>
+                <picture>
+                    <img src="" alt="" class="main-hobby">
+                    <div>
+                    <img class="image1" 
+                         src="./Assets/slider-1.png" 
+                         alt="person-learning-new-technology"
+                         >
+                    <img class="image2" 
+                         src="./Assets/slider-2.png" 
+                         alt="a-house"
+                         >
+                    <img class="image3" 
+                         src="./Assets/slider-3.png" 
+                         alt="person-playing-golf"
+                         >
+                    <img class="image4" 
+                         src="./Assets/slider-4.png" 
+                         alt="xbox-controller"
+                         >
+                
+                </picture>
+            </section>
+        
+            <a name="tech-stack"></a>
+            <section class="flex-box tech-stack">
+                <h2>
+                    Tech Stack
+                </h2>
+                <div class="tech-box">
+                  <div class="tech-imgs">
+                      <img src="./Assets/128px-HTML5_logo_and_wordmark.svg.png" alt="HTML-Logo">
+                      <img src="./Assets/CSS3_logo_and_wordmark.svg.png" alt="CSS-Logo">
+                      <img src="./Assets/128px-JavaScript-logo.png" alt="Javascript-Logo">
+                      <img src="./Assets/128px-Sass_Logo_Color.svg.png" alt="SASS-Logo">
+                      <img src="./Assets/Visual_Studio_Code_1.35_icon.svg.png" alt="VSCode-Logo">
+                      <img src="./Assets/GitHub-Logos/GitHub_Logo_White.png" alt="GitHub-Logos">
+                  </div>
+                </div>
+            </section>
+        <a name="work"></a>
+        <section class="flex-box work">
+            <h2>
+                Work
+            </h2>
+            <article class="carousel">
+                <svg class="btn btn-left" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                    viewBox="0 0 512.006 512.006" style="enable-background:new 0 0 512.006 512.006;" xml:space="preserve"><g><g>
+		                <path d="M388.419,475.59L168.834,256.005L388.418,36.421c8.341-8.341,8.341-21.824,0-30.165s-21.824-8.341-30.165,0
+			            L123.586,240.923c-8.341,8.341-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251
+			            c5.461,0,10.923-2.091,15.083-6.251C396.76,497.414,396.76,483.931,388.419,475.59z"/>
+	                    </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                <div class="carousel-track-container">
+                    <ul class="carousel-track">
+                        <li class="carousel-slide current-slide league-project">
+                            <img class="carousel-image " src="./Assets/Screenshot 2022-01-23 at 16-43-27 League-of-legends.png" alt="league-of-legends-fan-page">
+                            <h3 class="work-heading">
+                                League of Legends Fan Site
+                            </h3>
+                            <p class="work-text">
+                                I made this website when i was doing my general assembly web development course. I enjoyed styling and the eureka moment of getting the Api to work.
+                            </p>
+                            <ul class="work-tech">
+                                <li>Semantic HTML</li>
+                                <li>CSS</li>
+                                <li>Flexbox</li>
+                                <li>Javascript</li>
+                                <li>APi</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://stevelopes.github.io/Final-project/">Live</a>
+                                <a href="https://github.com/Stevelopes/Final-project">Code</a>
+                            </div>
+                            
+                        </li>
+                        <li class="carousel-slide frontend-mentor-challenge">
+                            <img class="carousel-image" src="./Assets/Screenshot 2022-01-23 at 16-44-09 Frontend Mentor Sunnyside agency landing page.png" alt="frontend-mentor-challenge">
+                            <h3 class="work-heading">
+                                Frontend styling challenge
+                            </h3>
+                
+                            <p class="work-text">
+                                I styled this website as a challenge from a Frontend Mentor. I got to use some new CSS to style borders in new ways on the mobile menu.
+                            </p>
+                            <ul class="work-tech">
+                                <li>Semantic HTML</li>
+                                <li>CSS</li>
+                                <li>Flexbox</li>
+                                <li>Javascript</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://stevelopes.github.io/sunnyside-agency-landing-page-main/">Live</a>
+                                <a href="https://github.com/Stevelopes/sunnyside-agency-landing-page-main">Code</a>
+                            </div>
+                        </li>
+                        <li class="carousel-slide marketing-site">
+                            <img class="carousel-image" src="./Assets/Screenshot 2022-01-26 at 21-37-07 Higher Purpose Marketing.png" alt="higher-purpose-marketing-website">
+                            <h3 class="work-heading">
+                                Higher Purpose Marketing
+                            </h3>
+                
+                            <p class="work-text">
+                                I made this for a friend who is trying to start up a marketing business. It was the first time i had to collaborate on a project, she wanted a simple website she could use to get feedback or as a contact point.
+                            </p>
+                            <ul class="work-tech">
+                                <li>Semantic HTML</li>
+                                <li>CSS</li>
+                                <li>Flexbox</li>
+                                <li>Javascript</li>
+                                <li>Forms</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://stevelopes.github.io/Hollie/">Live</a>
+                                <a href="https://github.com/Stevelopes/Hollie">Code</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <svg class="btn btn-right" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 330 330" style="enable-background:new 0 0 330 330;" xml:space="preserve">
+                        <path id="XMLID_222_" d="M250.606,154.389l-150-149.996c-5.857-5.858-15.355-5.858-21.213,0.001
+                        c-5.857,5.858-5.857,15.355,0.001,21.213l139.393,139.39L79.393,304.394c-5.857,5.858-5.857,15.355,0.001,21.213
+                        C82.322,328.536,86.161,330,90,330s7.678-1.464,10.607-4.394l149.999-150.004c2.814-2.813,4.394-6.628,4.394-10.606
+                        C255,161.018,253.42,157.202,250.606,154.389z"/><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+            </article>
+        </section>
+        </div>
+        <a name="contact-me"></a>
+        <section class="flex-box contact-me">
+            <h2>
+                Contact Me
+            </h2>
+            <div class="container" name="contact">
+                <form action="https://formspree.io/f/xbjwdvzj" method="POST" id="my-form">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form> 
+            </div>
+            <div id="status"></div>
+        </section>
+    </main>
+   </div>
+   <script src="./script.js"></script>
 </body>
 </html>
