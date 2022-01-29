@@ -38,6 +38,7 @@ function change() {
 window.addEventListener('DOMContentLoaded', () => {
   myFunction();
   setInterval(change, 2000);
+  removeAddArrows (slidesIndex, btnLeft, btnRight, slides)
 });
 
 ///Hamburger menu
