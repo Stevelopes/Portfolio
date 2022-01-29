@@ -35,6 +35,11 @@ h1, h2, h3 {
   justify-content: end;
   flex-direction: column;
 
+      .github-logo-1 {
+        display: none;
+      }
+  
+
       .nav-links {
         display: none;
       }
@@ -52,7 +57,7 @@ h1, h2, h3 {
       }
 
       .nav-box {
-        height: 30vh;
+        height: 20vh;
         width: 85%;
         background-color: $light-yellow;
         margin-top: 0;
@@ -73,14 +78,34 @@ h1, h2, h3 {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
+                align-items: center;
                 height: 100%;
                 width: 100%;
+
+                  .github-logo-2 {
+
+                    margin: 0;
+
+                    svg {
+
+                      max-height: 40px;
+                      max-width: 40px;
+                    }
+                  }
+
+                  li {
+                    width: 100%;
+                  }
                 
                   a {
                   text-decoration: none;
-                  margin: 5%;
+                  margin: 4%;
                   color: $dark-green;
                   font-family: $fraunces;
+                  }
+
+                  a:hover {
+                    color: red;
                   }
               }
 
@@ -260,6 +285,17 @@ margin-bottom: 5%;
               align-items: center;
               list-style: none;
             }
+            .project-links {
+              width: 100%;
+              display: flex;
+              justify-content: center;  
+
+              a {
+                  margin: 2%;
+                  text-decoration: none;
+                  color: red;
+              }
+          }
           }
             
         }

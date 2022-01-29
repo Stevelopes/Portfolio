@@ -7,6 +7,9 @@
   .nav-bar {
     flex-direction: row;
   }
+  .nav-bar .github-logo-1 {
+    display: none;
+  }
   .nav-bar .nav-links {
     display: block;
     width: 100%;
@@ -15,6 +18,15 @@
     display: flex;
     list-style: none;
     justify-content: center;
+    align-items: center;
+  }
+  .nav-bar .nav-links ul .github-logo-2 svg {
+    max-width: 50px;
+    max-height: 50px;
+    transition: 0.5s ease-in-out;
+  }
+  .nav-bar .nav-links ul .github-logo-2 svg:hover {
+    transform: scale(1.3);
   }
   .nav-bar .nav-links ul li {
     margin-right: 4%;
@@ -119,6 +131,14 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  .nav-bar .github-logo-1 {
+    display: block;
+    margin: 1%;
+  }
+  .nav-bar .github-logo-1 svg {
+    max-width: 50px;
+    max-height: 50px;
+  }
   .nav-bar .nav-links {
     display: none;
   }

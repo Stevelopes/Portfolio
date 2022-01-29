@@ -20,6 +20,10 @@ body {
 
     flex-direction: row;
 
+    .github-logo-1 {
+        display: none;
+    }
+
     .nav-links {
         display: block;
         width: 100%;
@@ -27,6 +31,22 @@ body {
             display: flex;
             list-style: none;
             justify-content: center;
+            align-items: center;
+
+            .github-logo-2 {
+
+                svg {
+                    max-width: 50px;
+                    max-height: 50px;
+                    transition: 0.5s ease-in-out;
+                }
+
+                svg:hover {
+                    transform: scale(1.3);
+                }    
+
+            }    
+
             li {
                 margin-right: 4%;
                 transition: 0.5s ease-in-out;
@@ -162,6 +182,17 @@ body {
 @media screen and (min-width: 1200px) {
 
     .nav-bar {
+
+        .github-logo-1 {
+            display: block;
+            margin: 1%;
+
+            svg {
+                max-width: 50px;
+                max-height: 50px;
+            }
+        }
+
         .nav-links {
             display: none;
         }
