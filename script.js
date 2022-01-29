@@ -66,10 +66,11 @@ const track = document.querySelector('.carousel-track');
 const slides = Array.from(track.children);
 const btnLeft = document.querySelector('.btn-left');
 const btnRight = document.querySelector('.btn-right');
- 
 const slideWidth = slides[0].getBoundingClientRect().width;
+const currentSlide = track.querySelector('.current-slide');
+const slidesIndex = slides.indexOf(currentSlide);
 
-console.log(track, btnRight, btnLeft, slideWidth);
+console.log(track, btnRight, btnLeft, slideWidth, slidesIndex);
 
 // align slides next to each other
 
@@ -88,18 +89,33 @@ btnRight.addEventListener('click', e => {
 
   const currentSlide = track.querySelector('.current-slide');
   const nextSlide = currentSlide.nextElementSibling;
+  const nextIndex = slides.findIndex(slide => slide === nextSlide);
  
   moveToSlide(track, currentSlide, nextSlide);
+  removeAddArrows (nextIndex, btnLeft, btnRight, slides);
 })
 
 btnLeft.addEventListener('click', e => {
 
   const currentSlide = track.querySelector('.current-slide');
   const prevSlide = currentSlide.previousElementSibling;
+  const prevIndex = slides.findIndex(slide => slide === prevSlide);
 
   moveToSlide(track, currentSlide, prevSlide);
+  removeAddArrows (prevIndex, btnLeft, btnRight, slides);
 })
 
+const removeAddArrows = (slidesIndex, btnLeft, btnRight, slides) => {
+
+  if (slidesIndex === 0) {
+    btnLeft.style.display = "none";
+  } else if (slidesIndex === slides.length - 1) {
+    btnRight.style.display = "none";
+  } else {
+    btnRight.style.display = "block";
+    btnLeft.style.display = "block";
+  }
+}
 
 /// script for form (formspree)
 
