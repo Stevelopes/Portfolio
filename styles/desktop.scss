@@ -171,6 +171,12 @@ body {
     }
 }
 .contact-me {
+
+    h2 {
+    padding: 2.5%;  
+    margin-bottom: 1%;  
+    }
+
     .container {
     width: 30%;
     }
@@ -202,7 +208,6 @@ body {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: flex-start;
-        height: 70vh;
 
         .about-me {
             width: 30%;
@@ -219,6 +224,14 @@ body {
             order: 2;
             flex-grow: 3;
             justify-content: start;
+            height: 85vh;
         }
-    }    
+    } 
+    
+    .contact-me {
+
+        h2 {
+            padding: 1%;
+        }
+    }
 }
