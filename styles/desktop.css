@@ -1,4 +1,4 @@
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 500px) {
   body {
     background-color: #000000;
     background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
@@ -89,6 +89,7 @@
     margin-bottom: 1%;
     height: 70vh;
     width: 90vw;
+    justify-content: flex-start;
   }
   .desktop-flex .work h2 {
     width: auto;
@@ -132,6 +133,16 @@
   }
   .contact-me .container {
     width: 30%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .desktop-flex .work {
+    height: 77vh;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .desktop-flex .work {
+    height: 83vh;
   }
 }
 @media screen and (min-width: 1200px) {

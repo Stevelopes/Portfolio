@@ -182,7 +182,7 @@ h1, h2, h3 {
 }
 .work .carousel {
   position: relative;
-  height: 650px;
+  height: 520px;
   margin: 0 auto;
   padding: 0;
   width: 80%;
@@ -207,14 +207,13 @@ h1, h2, h3 {
   justify-content: center;
   position: absolute;
   top: 0;
-  bottom: 0;
   width: 100%;
   color: #fff5bb;
   text-align: center;
 }
 .work .carousel .carousel-track-container .carousel-track .carousel-slide .carousel-image {
   width: 100%;
-  height: 50%;
+  height: 20%;
 }
 .work .carousel .carousel-track-container .carousel-track .carousel-slide .work-heading {
   font-size: 1.5em;
