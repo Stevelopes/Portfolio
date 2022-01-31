@@ -41,7 +41,6 @@ h1, h2, h3 {
   fill: #fff5bb;
 }
 .nav-bar .nav-box {
-  height: 20vh;
   width: 85%;
   background-color: #fff5bb;
   margin-top: 0;
@@ -70,8 +69,8 @@ h1, h2, h3 {
   margin: 0;
 }
 .nav-bar .nav-box .nav-links ul .github-logo-2 svg {
-  max-height: 40px;
-  max-width: 40px;
+  max-height: 30px;
+  max-width: 30px;
 }
 .nav-bar .nav-box .nav-links ul li {
   width: 100%;
