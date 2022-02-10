@@ -166,7 +166,7 @@ h1, h2, h3 {
   flex-wrap: wrap;
   justify-content: center;
 }
-.tech-stack .tech-imgs img {
+.tech-stack .tech-imgs img, .tech-stack .tech-imgs svg {
   max-height: 40px;
   max-width: 40px;
   margin: 5%;
